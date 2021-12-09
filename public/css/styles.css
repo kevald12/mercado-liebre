@@ -1,0 +1,177 @@
+@import url('normalize.css');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: 'Roboto';
+}
+.main-header{
+    background-color: #EAC926;
+    padding: 20px;
+}
+.logo{
+    width: 200px;
+}
+.banner{
+    width: 100%;
+    margin: auto;
+    margin-bottom: -10px;
+}
+.products-container h3{
+    font-size: 24px;
+}
+.texts{
+    font-size: 12px;
+}
+.price{
+    font-size: 18px;
+    color: black;
+}
+.discounts{
+    font-size: 16px;
+}
+.pro-container{
+    border-top: solid 1px #ebebeb;
+    color: #39b54a;
+    padding: 15px;
+    text-align: left;
+}
+.descriptions{
+    font-size: 16px;
+    color: grey;
+    display: none;
+}
+.main-container{
+    background-color: #ebebeb;
+    margin: auto;
+    text-align: center;
+
+}
+
+.burguer-menu{
+    background-color :#03264C;
+    color: white ;
+    margin: auto;
+    border-radius: 8px;
+    font-size: 18px;
+    text-align: center;
+    max-width: 50px;
+    height: 45px;
+    padding: 15px 0;
+    display: block;
+}
+.copy-header{
+    font-weight: 400;
+    text-align: center;
+}
+.main-navbar{
+    display: none;
+}
+.main-navbar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.main-navbar a{
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+}
+.pro-container i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    position: absolute;
+}
+.products-container h3{
+    text-align: left;
+    max-height: 70px;
+}
+
+@media (min-width:361px){
+    .main-header-top-bar{
+        justify-content: space-between;
+        display: flex;
+        
+    }
+    .copy-header{
+        max-width: 350px;
+        text-align: right;
+    }
+    .burguer-menu{
+        display: none;
+    }
+    .main-navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-navbar ul{
+        display: flex;
+    }
+    .main-navbar li{
+        margin:0 5px;
+    }
+    .product{
+        background-color: #fff;
+        padding: 15px;
+        margin: 15px;
+        box-shadow: 0 0 10px     rgba(0,0,0,0.5);
+    }
+    .descriptions{
+        display:block;
+    }
+}
+@media (min-width: 769px) {
+    .main-header-top-bar, .main-navbar{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .main-navbar li{
+        margin:0 10px;
+    }
+    .main-navbar a{
+        font-size: 19px;
+    }
+    .copy-header{
+        max-width: none;
+    }
+    .product{
+        background-color: #fff;
+        padding: 15px;
+        margin: 15px;
+        box-shadow: 0 0 10px     rgba(0,0,0,0.5);
+    }
+    .descriptions{
+        display: block;
+    }
+}
+.last-part{
+    text-align: center;
+}
+.gift,.shield,.card{
+    background-color: white;
+    color: #1259c3;
+    margin: auto;
+}
+
+/*
+
+.titles{
+    width: 90%;
+    margin: auto;
+    border: 1px solid;
+}
+
+*/
