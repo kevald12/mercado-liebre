@@ -14,14 +14,14 @@
 <body>
     <header class="main-header">
         <div class="main-header-top-bar">
-            <img src="/images/logo-mercado-liebre.svg" alt="mercado liebre" class="logo">
-            <p>
-                <input type="search" name="busquedapruductos" placeholder="Buscar productos, marcas...">
-                <div class="searchlogo">
-                    <i class="fas fa-search"></i>
-                </div>
+            <div class="image-search">
+            <a href="/"><img src="/images/logo-mercado-liebre.svg" alt="mercado liebre" class="logo"></a>
+           <p class="search">
+                <input class="search-bar" type="search" action="/productos" method="POST" name="busquedapruductos"
+                    placeholder="Buscar productos, marcas...">
+                <button><i class="fas fa-search"></i></button></p>
             </p>
-
+            </div>  
             <h2 class="copy-header"><i class="fas fa-hand-holding-usd"></i>
                 Compra en cuotas y sin tarjeta de crédito
             </h2>
@@ -38,9 +38,9 @@
             </ul>
 
             <ul class="right-navbar">
-                <li><a href="#">Crea tu cuenta</a><i class="far fa-id-card"></i></li>
-                <li><a href="#">Ingresa</a><i class="fas fa-sign-in-alt"></i></li>
-                <li><a href="#">Mis compras</a><i class="fas fa-shopping-basket"></i></li>
+                <li><a href="/register">Crea tu cuenta<i class="far fa-id-card"></i></a></li>
+                <li><a href="/login">Ingresa<i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="#">Mis compras<i class="fas fa-shopping-basket"></i></a></li>
             </ul>
         </nav>
 
@@ -51,10 +51,8 @@
         </div>
     </header>
 
-    <div>
-        <img src="/images/img-home-banner.jpg" class="banner">
-    </div>
-        
+
+
     <form action="/registrarse" method="post" class="form">
         <div class="formulario">
             
@@ -126,7 +124,8 @@
         </div>
     </form>
     <footer class=last-part>
-        <section>
+        <div class = "foot">
+        <section >
             <a href="#" class="card">
                 <i class="fas fa-credit-card"></i>
             </a>
@@ -134,7 +133,7 @@
             <p class="texts">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
                 puntos de pago. ¡Y siempre es seguro!</p>
         </section>
-        <section>
+        <section    >
             <a href="#" class="gift">
                 <i class="fas fa-gift"></i>
             </a>
@@ -150,8 +149,9 @@
             <p class="texts">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
                 porque estás siempre protegid@.</p>
         </section>
+        </div>
         <section>
-            <p class="texts">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+            <p class="rights">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
         </section>
     </footer>
 </body>

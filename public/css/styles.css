@@ -16,11 +16,13 @@ body {
 
 .main-header {
     background-color: #EAC926;
-    padding: 20px;     
+    padding: 20px;
+    margin: 0px;
+    text-decoration: #666;
 }
 
 .logo {
-    width: 200px;
+    width: 50%;
 }
 
 .banner {
@@ -28,81 +30,34 @@ body {
     margin: auto;
     margin-bottom: -10px;
 }
-/*  main content */
-
-
-.products-container h3 {
-    font-size: 24px;
-    text-align: left;
-    max-height: 70px;
+.search {
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    align-self: center;
+}
+.search-bar {
+    text-decoration-color: #ebebeb;
+    align-items: center;
+    border: 1px;
+    border-radius: 6px;
+    padding: 5px;
+    margin-right: 5px;
+    width: 80%;
 }
 
-.texts {
-    font-size: 12px;
+.search button {
+    background-color: white;
+    border: 1px;
+    border-radius: 6px;
+    padding: 5px;
 }
 
-.price {
-    font-size: 18px;
-    color: black;
-    width: 30%;
-}
-
-.discounts {
-    font-size: 16px;
-    color: #39b54a;
-    width:70% ;
-}
-
-.pro-container {
-    border-top: solid 1px #ebebeb;
-    padding: 15px;
-    position: relative;
+.main-header-top-bar{
     display: flex;
     flex-wrap: wrap;
-   
-
+    
 }
-
-.pro-container span,h2{
-    align-content: space-around;
-}
-.pro-container h2{
-    width: 30%;
-    position: relative;
-}
-
-.descriptions {
-    font-size: 16px;
-    color: grey;
-}
-
-.main-container {
-    background-color: #ebebeb;
-    margin: auto;
-    justify-content: center;
-    color: grey;
-    font-weight: bold;
-    padding: 15px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-}   
-.product{
-    position:relative;
-}
-.burguer-menu {
-    background-color: #03264C;
-    color: white;
-    margin: auto;
-    border-radius: 8px;
-    font-size: 18px;
-    text-align: center;
-    max-width: 50px;
-    height: 45px;
-    padding: 15px 0;
-    display: block;
-}
-
 .copy-header {
     font-weight: 400;
     text-align: center;
@@ -123,7 +78,87 @@ body {
     color: #222222;
     display: inline-block;
     padding: 5px 0;
+}   
+.image-search{
+    flex-wrap: nowrap;
+    display: flex;
+    align-content: space-between;
 }
+
+/*  main content */
+
+
+.products-container h3 {
+    font-size: 24px;
+    text-align: left;
+    max-height: 70px;
+    width: 100%;
+}
+
+.texts {
+    font-size: 12px;
+}
+
+.price {
+    font-size: 18px;
+    color: black;
+    width: 30%;
+}
+
+.discounts {
+    font-size: 16px;
+    color: #39b54a;
+}
+
+.pro-container {
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.pro-container span,h2{
+    align-content: space-around;
+}
+.pro-container h2{
+    position: relative;
+}
+
+.descriptions {
+    font-size: 16px;
+    color: grey;
+    text-align: left;
+}
+
+.main-container {
+    background-color: #ebebeb;
+    margin: auto;
+    justify-content: center;
+    color: grey;
+    font-weight: bold;
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}   
+
+.burguer-menu {
+    background-color: #03264C;
+    color: white;
+    margin: auto;
+    border-radius: 8px;
+    font-size: 18px;
+    text-align: center;
+    max-width: 50px;
+    height: 45px;
+    padding: 15px 0;
+    display: block;
+}
+
+
 .product i  {
     display: block;
     font-size: 16px;
@@ -138,47 +173,55 @@ body {
     position: absolute;
     top: -15px;
 }
-.products-container {
-	width: 90%;
-	margin: auto;
-	border: 2px solid olive;
-    display: flex;
-    flex-wrap: wrap;
-
-}
 
 .product img {
 	align-self: flex-start;
     margin: auto;
+    width: 100%;
 }
 .product {
     background-color: #fff;
     padding: 15px;
     margin: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-.product-article:hover i{
-    transform: rotate(-90deg);
-}
-
-.product-article {
     box-shadow: none;
 }
 
+.product:hover i{
+    transform: rotate(-90deg);
+}
+
+.logo{
+    width: 200px;
+}
+.products-container {
+    padding: 20px;
+    margin: auto;
+    width: 90%; 
+}
 
 @media (min-width:361px) {
-    .main-header-top-bar {
-        justify-content: space-between;
-        display: flex;
 
+    /* Header */
+
+   .main-header-top-bar {
+        justify-content: space-around;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .main-header-top-bar,
+    .main-navbar {
+        max-width: 769px;
+        margin: auto;
+        display: auto;
+    }
+    .copy-header .main-header-top-bar{
+        display: flex;
+        align-content: space-between;
     }
 
     .copy-header {
-        max-width: 350px;
+        max-width: 300px;
         text-align: right;
     }
 
@@ -189,32 +232,44 @@ body {
     .main-navbar {
         display: flex;
         justify-content: space-between;
+        box-sizing: border-box;
     }
 
     .main-navbar ul {
         display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: flex-start;
     }
 
     .main-navbar li {
-        margin: 0 5px;
+        margin: 0 4px;
     }
 
-    
+    /* main */
+    .cont-product{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
     .descriptions {
         display: block;
     }
 
-    .products-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-    }
-    .articulos:hover {
-        box-shadow: 0px 0px 10px rgb(100 100 100);
+
+    .product:hover {
+        box-shadow: 0px 0px 10px rgb(0 0 0 0.5);
         transition: all 450ms;
     }
-    
+    .product{
+        width: 45%;  
+        max-height: 340px;
+        margin:10px 0;      
+    }
+
 }
 
 @media (min-width: 769px) {
@@ -246,33 +301,60 @@ body {
         flex-wrap: wrap;
         justify-content: space-around;
     }
+    .product{
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        display: block;
+    }
+    .product {
+        width: 20%;
+        max-height: 340px;
+    }
+
+    .product:hover .descriptions {
+        opacity: 1;
+        padding: 15px 0;
+        transition: all 450ms;
+    }
+    .logo{
+        width: 200px;
+    }
+    .products-container {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap; 
+    }
+    /* Footer */
+    .foot{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .rights{
+        align-self: left; 
+    }
 }
 
 
 /*  Footer  */
 
-.last-part {
+.foot{
     text-align: center;
 }
 
 .gift,
 .shield,
 .card {
-    background-color: white;
+    background-color: #ebebeb;
     color: #1259c3;
     margin: auto;
 }
-
-/*
-
-.titles{
-    width: 90%;
-    margin: auto;
-    border: 1px solid;
+.last-part i:hover{
+    color:grey;
+    transition: all 450ms;
 }
-
-*/
-
 
 /* Formularios */
 
