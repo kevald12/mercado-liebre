@@ -3,7 +3,7 @@ const path = require ('path');
 
 const app = express ();
 
-app.listen(3000,() => console.log('El servidor funciona continua'));
+app.listen(process.env.PORT || 3000,() => console.log('El servidor funciona continua'));
 
 app.use(express.static(path.resolve(__dirname,'public')));
 
